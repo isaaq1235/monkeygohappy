@@ -22,7 +22,7 @@ function preload() {
 
 
 function setup() {
-  createCanvas(700, 500);
+  createCanvas(500, 500);
 
   PLAY = 1;
   GameState = PLAY;
@@ -55,11 +55,11 @@ function draw() {
       ground.x = ground.width / 2;
     }
 
-    if (invisible.x < 0) {
+    /*if (invisible.x < 0) {
       invisible.x = invisible.width / 2;
     }
     invisible.velocityX = -5;
-
+    */
     if (keyDown("space") && monkey.isTouching(ground)) {
       monkey.velocityY = -20;
     }
